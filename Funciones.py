@@ -31,7 +31,14 @@ def ingresar_nombre_usuario(mensaje:str, mensaje_error:str, minimo_len:int, maxi
     else:
         mensaje_error=print("Incorrecto ")
       
-    
+def calcular_puntuacion_parcial(palabra: str, letras_adivinadas: set, intentos_restantes: int) -> int:
+    puntaje = 0
+    for letra in letras_adivinadas:
+        if letra in palabra:    
+            puntaje +=3
+        else:
+            puntaje -=1
+    return puntaje
 
 def verificar_estado_juego(diccionario_juego:dict)->bool:
     estado={
