@@ -57,8 +57,11 @@ def mostrar_palabra_oculta(palabra_oculta:str):
     if inten==0:
         print(palabra_oculta[0])
 
-def calcular_puntuacion_final():
-    pass
+def calcular_puntuacion_final(puntajes_parciales):
+    return sum(puntajes_parciales)
+
+def calcular_puntuacion_parcial(letra, acierto):
+    return 3 if acierto else -1
 
 palabra_oculta=["voley"]
 elemento=palabra_oculta.pop()
