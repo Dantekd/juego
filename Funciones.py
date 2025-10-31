@@ -40,19 +40,15 @@ def verificar_estado_juego(diccionario_juego:dict)->bool:
     pass
 
 def mostrar_palabra_oculta(palabra_oculta:str):
-    elemento=palabra_oculta.pop()
+    def mostrar_palabra_oculta(palabra_oculta:list):
+    elemento=palabra_oculta.pop(0)
     orig=str(elemento)
     letras=list(orig)
-    
-
-    
-    print(F"Elemento eliminado :{elemento}")
-    for i in range(len(palabra_oculta)):
-        cadena = "ahorcado"
-letras = list(cadena)
-print(letras)
+    print(letras)
+    palabraoculta = ["_"] * len(letras)
+    print(palabraoculta)
     if inten==0:
-        print(palabra_oculta[i])
+        print(palabra_oculta[0])
 
 def calcular_puntuacion_final():
     pass
