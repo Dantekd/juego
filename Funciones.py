@@ -1,7 +1,7 @@
 from datetime import date
 
 def obtener_lista_palabras() -> list:
-    palabra_oculta=["voley"]
+    palabra_oculta=["volley"]
     return palabra_oculta
 
 
@@ -47,7 +47,6 @@ def verificar_estado_juego(diccionario_juego:dict)->bool:
     pass
 
 def mostrar_palabra_oculta(palabra_oculta:str):
-    def mostrar_palabra_oculta(palabra_oculta:list):
     elemento=palabra_oculta.pop(0)
     orig=str(elemento)
     letras=list(orig)
@@ -63,8 +62,4 @@ def calcular_puntuacion_final(puntajes_parciales):
 def calcular_puntuacion_parcial(letra, acierto):
     return 3 if acierto else -1
 
-palabra_oculta=["voley"]
-elemento=palabra_oculta.pop()
-orig=str(elemento)
-letras=list(orig)
-print(letras)
+¡
