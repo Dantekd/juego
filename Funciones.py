@@ -1,3 +1,5 @@
+from datetime import date
+
 def obtener_lista_palabras() -> list:
     palabra_oculta=["voley"]
     return palabra_oculta
